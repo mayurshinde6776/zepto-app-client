@@ -6,8 +6,9 @@ import Header from './components/Header';
 import { Route, Routes } from 'react-router-dom';
 import Cards from './components/Cards';
 import CardsDetails from './components/CardsDetails';
-import Success from './components/success.js';
 import Cancel from './components/cancel.js';
+import Success from './components/success.js';
+import SuccessPage from './components/SuccessPage.js';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
     <Route path='/' element={<Cards/>} />
     <Route path='/home' element={<Cards/>} />
     <Route path='/cart/:id' element={<CardsDetails/>} />
-    <Route path='/success' element={<Success/>} />
+    <Route path='/success' element={<SuccessPage/>} />
     <Route path='/cancel' element={<Cancel/>} />
    </Routes>
     </>
